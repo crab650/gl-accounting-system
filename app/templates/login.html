@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% block title %}登入 · GL Accounting{% endblock %}{% block body %}
+<section class="card narrow"><h2>登入</h2><form method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><label>帳號<input name="username" required autofocus></label><label>密碼<input name="password" type="password" required></label><button>登入</button></form></section>{% endblock %}
